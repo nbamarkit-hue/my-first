@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    >Cuida tu Salud - Guía Completa</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+</head>
+<script src="script.js"></script>
+</body>
+<body>
+    <header>
+        <div class="container">
+            <h1>🏥 Cuida tu Salud</h1>
+            <p class="subtitle">Tu guía completa para una vida más saludable</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Comienza tu viaje hacia una vida más saludable</h2>
+                <p>Descubre consejos prácticos y recomendaciones para cuidar tu salud física y mental</p>
+            </div>
+        </section>
+
+        <section class="categories">
+            <div class="category-card" onclick="showCategory('nutrition')">
+                <div class="icon">🥗</div>
+                <h3>Nutrición</h3>
+                <p>Alimentación balanceada y saludable</p>
+            </div>
+
+            <div class="category-card" onclick="showCategory('exercise')">
+                <div class="icon">💪</div>
+                <h3>Ejercicio</h3>
+                <p>Actividad física y rutinas</p>
+            </div>
+
+            <div class="category-card" onclick="showCategory('sleep')">
+                <div class="icon">😴</div>
+                <h3>Descanso</h3>
+                <p>Importancia del sueño reparador</p>
+            </div>
+
+            <div class="category-card" onclick="showCategory('mental')">
+                <div class="icon">🧘</div>
+                <h3>Salud Mental</h3>
+                <p>Bienestar emocional y psicológico</p>
+            </div>
+
+            <div class="category-card" onclick="showCategory('water')">
+                <div class="icon">💧</div>
+                <h3>Hidratación</h3>
+                <p>Mantente bien hidratado</p>
+            </div>
+
+            <div class="category-card" onclick="showCategory('checkup')">
+                <div class="icon">🏥</div>
+                <h3>Chequeos Médicos</h3>
+                <p>Prevención y detección temprana</p>
+            </div>
+        </section>
+
+        <section id="content-section" class="content-section hidden">
+            <button class="back-btn" onclick="hideContent()">← Volver</button>
+            <div id="content-area"></div>
+        </section>
+
+        <section class="daily-tips">
+            <h2>💡 Consejo del Día</h2>
+            <div class="tip-card">
+                <p id="daily-tip"></p>
+                <button onclick="changeTip()">Otro consejo</button>
+            </div>
+        </section>
+
+        <section class="water-tracker">
+            <h2>💧 Seguimiento de Agua</h2>
+            <div class="tracker-content">
+                <p>Meta diaria: 8 vasos de agua</p>
+                <div class="water-glasses">
+                    <div class="glass" onclick="toggleGlass(this)">🥤</div>
+                    <div class="glass" onclick="toggleGlass(this)">🥤</div>
+                    <div class="glass" onclick="toggleGlass(this)">🥤</div>
+                    <div class="glass" onclick="toggleGlass(this)">🥤</div>
+                    <div class="glass" onclick="toggleGlass(this)">🥤</div>
+                    <div class="glass" onclick="toggleGlass(this)">🥤</div>
+                    <div class="glass" onclick="toggleGlass(this)">🥤</div>
+                    <div class="glass" onclick="toggleGlass(this)">🥤</div>
+                </div>
+                <p id="water-count">0 de 8 vasos</p>
+                <button onclick="resetWater()">Reiniciar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Cuida tu Salud - Todos los derechos reservados</p>
+            <p class="disclaimer">Esta aplicación es solo con fines educativos y no reemplaza la consulta médica profesional</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
